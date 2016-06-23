@@ -1,193 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+<!DOCTYPE html>
+<html lang="no">
+
 <head>
-<!-- For questions about this page, contact https://github.com/Laaknor/wikipediano -->
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>wikipedia.no</title>
 
-	<meta name="keywords" lang="no" content="Wikipedia Norge encyklopedi" />
-	<meta name="keywords" lang="nb" content="Wikipedia Norge encyklopedi" />
+    <!-- For questions about this page, contact https://github.com/Laaknor/wikipediano -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-	<meta name="description" lang="no" content="Den norske portalen til Wikipedia, den frie encyklopedi" />
+    <meta name="keywords" lang="no" content="Wikipedia Norge Noreg leksikon encyklopedi" />
+    <meta name="keywords" lang="nb" content="Wikipedia Norge Noreg leksikon encyklopedi" />
+    <meta name="description" lang="no" content="Den norske portalen til Wikipedia, det frie leksikonet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/portal.css">
 
-	<meta name="robots" content="index" />
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-27936824-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 
-
-	<title>Wikipedia NO</title>
-
-      <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" /><!-- Test only. -->
-	<link rel="stylesheet" type="text/css" media="screen" href="country-portal.css" />
-	<script src="country-portal.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-27936824-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
-
+    <script src="country-portal.js" type="text/javascript"></script>
 </head>
 
-<body id="wikipedia-no">
+<body>
+    <div class="container">
+        <div class="jumbotron">
 
-<!-- Start of main  -->
+            <div class="container text-center">
+                <img src="images/Wikipedia-logo.png" alt="Wikipedia-logoen" class="wp-logo" />
+            </div>
 
-<div id="nettbutikk" onclick="goNettbutikk(this)">
-	<p>
-	
+            <div class="container text-center">
+                <form role="form">
+                    <div class="form-group">
+                            <input type="text" class="form-control" id="searchString">
+                            <button type="button" class="btn btn-primary" onclick="searchWP('no')">S&oslash;k Bokm&aring;l</button>
+                            <button type="button" class="btn btn-primary" onclick="searchWP('nn')">S&oslash;k Nynorsk</button>
+                            <button type="button" class="btn btn-primary" onclick="searchWP('se')">Oza S&aacute;megilli</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-	<a href="https://docs.google.com/a/wikimedia.no/forms/d/10slC069s5JgOlT_bdscFLcgBKGgJevcpfuAKFSxcHG0/viewform"><img width="75" height="100"
-            src="pins.png"
-            alt="Pins" /></a>
+    <nav class="navbar navbar-fixed-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-right" href="http://wikimedia.no"><img src="images/Wikimedia_logo-scaled-down.png" alt="Wikimedia-logoen" /></a>
 
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://wikimedia.no">Engasjer deg i Wikimedia Norge du også!</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<br />
-	<span class="intro">Bidra til kunnskapsdugnaden p&aring; Wikipedia!<br /><a class = "butikklenke" href="https://docs.google.com/a/wikimedia.no/forms/d/10slC069s5JgOlT_bdscFLcgBKGgJevcpfuAKFSxcHG0/viewform">Støtt de norske Wikipedia-prosjektene</a></span>
-
-	</p>
-
-
-</div>
-
-<div id="wrap">
-<div id="main">
-
-<div>
-
-<div lang="nb" class="left column red-bg field" onclick="golang(this)">
-	<h1 class="hello">Velkommen</h1>
-	<p class="intro"><a href="http://no.wikipedia.org/" class="aux">
-
-	<strong>Wikipedia</strong> er et flerspråklig <strong>oppslagsverk</strong>
-	som er laget på dugnad. Innholdet er <strong>fritt</strong> og vil alltid forbli fritt.
-	Alle kan lese, skrive eller rette i Wikipedia!
-	</a></p><p>
-
-	<a class="main" href="http://no.wikipedia.org/">Wikipedia på bokmål og riksmål</a></p>
-</div>
-
-<div lang="nn" class="right column yellow-bg field" onclick="golang(this)">
-	<h1 class="hello">Velkommen</h1>
-
-	<p class="intro"><a href="http://nn.wikipedia.org/" class="aux">
-<strong>Wikipedia</strong> er eit fleirspråkleg <strong>oppslagsverk</strong> som er laga på dugnad. Innhaldet er <strong>fritt</strong> og vil alltid vere fritt. Alle kan lese, skrive eller rette i Wikipedia!
-        </a></p><p>
-
-
-	<a class="main" href="http://nn.wikipedia.org/">Wikipedia på nynorsk</a></p>
-</div>
-
-<a id="logo" href="http://www.wikipedia.org"></a>
-
-<div lang="se" class="left column green-bg field" onclick="golang(this)">
-	<h1 class="hello">Bures boahtin</h1>
-	<p class="intro"><a href="http://se.wikipedia.org/" class="aux">
-	<strong>Wikipedia</strong> lea máŋggagielat <strong>diehtosátnegirji</strong>, mii lea ráhkaduvvon ovttas. Sisdoallu lea <strong>friddja</strong>, ja galgá leat álo friddja. Buohkat sáhttet lohkat, čállit dahje divvut Wikipedia.
-
-        </a></p><p>
-
-	<a class="main" href="http://se.wikipedia.org/">Wikipedia sámegillii</a></p>
-</div>
-
-<div lang="en" class="right column purple-bg field" onclick="goWMNO(this)">
-	<h1 class="hello">Om portalen <span class="tt">www.wikipedia.no</span></h1>
-	<p class="intro"><a href="http://www.wikimedia.no/" class="aux">
-	Dette er en portal som driftes av <strong>Wikimedia Norge</strong>, 
-	en norsk ideell forening som arbeider for å gjøre kunnskap fri og tilgjengelig for alle mennesker.
-	</a></p><p>
-	<a class="main" href="http://no.wikimedia.org/wiki/Bli_medlem">Om Wikimedia Norge</a>  </p>
-</div>
-
-
-<br />
-<div id="search">
-	<form id="fsearch" action="http://no.wikipedia.org/wiki/Special:Search" method="get" accept-charset="utf-8">
-
-	<script type="text/javascript"><!--
-		makefield( 'S&oslash;keord…');
-
-		makebutton( 'no',  'red-bg',    'Søk bokmål'); // ord
-		makebutton( 'nn',  'yellow-bg', 'Søk nynorsk');  // wurd
-		makebutton( 'se',  'green-bg',  'Oza sámegillii'); // Woord
-		
-		//-->
-	</script>
-
-	</form>
-</div>
-
-
-<div id="others">
-	<p>
-	<span lang="nb" class="otherstitle">Wikipedia <a href="http://www.wikipedia.org">på andre språk</a></span>
-	</p>
-	<p><!-- Languages spoken in the country, language code equal to this country code, etc. -->
-	<span class="other"><a href="http://ar.wikipedia.org/">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</a></span>
-	<span class="other"><a href="http://de.wikipedia.org/">Deutsch</a></span>
-
-	<span class="other"><a href="http://en.wikipedia.org/">English</a></span>
-	<span class="other"><a href="http://es.wikipedia.org/">Español</a></span>
-	<span class="other"><a href="http://fi.wikipedia.org/">Suomi</a></span>
-
-	<span class="other"><a href="http://fr.wikipedia.org/">Français</a></span>
-	<span class="other"><a href="http://da.wikipedia.org/">Dansk</a></span>
-	<span class="other"><a href="http://is.wikipedia.org/">Íslenska</a></span>
-	<span class="other"><a href="http://pl.wikipedia.org/">Polski</a></span>
-	<span class="other"><a href="http://ru.wikipedia.org/">Русский</a></span>
-	<span class="other"><a href="http://sv.wikipedia.org/">Svenska</a></span>
-	<span class="other"><a href="http://so.wikipedia.org/">Afsoomaali</a></span>
-
-	<span class="other"><a href="http://tr.wikipedia.org/">Türkçe</a></span>
-	<span class="other"><a href="http://vi.wikipedia.org/">Tiếng Việt</a></span>
-	<span class="other"><a href="http://ur.wikipedia.org/">اردو</a></span>
-	</p>
-
-
-</div>
-
-</div>
-</div>
-<!-- End of main -->
-
-<!-- Start of footer -->
-
-<div id="footer">
-	<div class="intro left banner"><a href="http://wikimedia.no">Wikimedia<br/>Norge</a>
-	</div>
-	<div class="right banner">
-
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
-
-	<a href="http://validator.w3.org/check?uri=referer"><img
-      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
-
-
-
-<a href="http://wikimediafoundation.org/"><img
-		src="wikimedia-button.png"
-		alt="Wikimedia Foundation"/></a>
-
-	</div>
-
-</div>
-<!-- End of footer -->
-
-
-</div>
 </body>
 </html>
-
-
