@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+
+.jumbotron {
+    background-color: #F8F8F8;
+}
+
+body {
+    background-color: #eee;
+}
+
+body {
+    margin-top: 60px;
+}
+
+.wp-logo {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+button {
+    width: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}

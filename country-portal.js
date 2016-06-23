@@ -1,48 +1,21 @@
-    mainsite= '.wikipedia.org';
-    infotext = 1;
+function searchWP(languageCode) {
+    document.location = 'https://' + languageCode + '.wikipedia.org/w/index.php?search=' + document.getElementById('searchString').value;
+}
 
-    function removetext() {
-	if (infotext==1) {
-	    document.getElementById("fsearch").search.value = "";
-	    document.getElementById("fsearch").search.style.color = "#000000";
-	    infotext = 0;
-	}
+window.onload = function() {
+    document.getElementById('searchString').focus();
+};
+
+window.addEventListener("keydown", function (event) {
+    if (event.defaultPrevented) {
+        return;
     }
 
-    url= 'http://';
-    function setlang( clicked)	{
-	document.getElementById("fsearch").action =
-                     url +clicked.lang +mainsite +'/wiki/Special:Search';
-
-	return true;
-    }
-    function golang( clicked)	{
-	document.location = url +clicked.lang +mainsite;
-
-	return true;
+    if (event.key === 'Enter') {
+        searchWP('no');
+    } else {
+        return;
     }
 
-    function goWMNO( clicked)	{
-	document.location = "http://www.wikimedia.no";
-
-	return true;
-    }
-
-    function goNettbutikk( clicked)	{
-	document.location = "http://nettbutikk.wikimedia.no";
-
-	return true;
-    }
-
-
-    function makefield( words) {
-	document.write( '<input type="text" name="search" onfocus="removetext()"'
-			+' value="' +words +'" size="26" maxlength="50" />');
-    }
-    function makebutton( language, color, tekst) {
-	document.write('<input type="submit" name="go" onclick="setlang(this)" lang="'
-			+language +'" class="' +color +' button" value="'+tekst +'" />');
-    }
-
-
-
+    event.preventDefault();
+}, true);
