@@ -20,7 +20,16 @@ body {
 }
 
 .form-control {
-    width: 100%;
+    width: 50%;
+    margin:auto;
+    transition:color 100ms,border-color 100ms,box-shadow 100ms;
+    border-radius:2px;
+    border:1px solid #a2a9b1;
+}
+.form-control:focus {
+    border-color:#3366cc;
+    box-shadow:inset 0 0 0 1px #3366cc;
+    outline:0;
 }
 
 button {
@@ -28,4 +37,25 @@ button {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 10px;
+}
+.btn-primary {
+    background-color:#36c;
+    border:1px solid #36c;
+    text-shadow:0 1px rgba(0,0,0,0.1);
+    border-radius:2px;
+    font-weight:bold;
+    color:#fff;
+}
+.btn-primary:hover {
+    background-color:#447ff5;
+    border-color:#447ff5;
+}
+.btn-primary:focus {
+    box-shadow:inset 0 0 0 1px #3366cc, inset 0 0 0 2px #ffffff;
+    outline-width:0;
+}
+.btn-primary:active {
+    background-color:#2a4b8d;
+    border-color:#2a4b8d;
+    box-shadow:none;
 }
