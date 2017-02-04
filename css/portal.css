@@ -33,10 +33,7 @@ body {
 }
 
 button {
-    width: 120px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
+    margin:10px 5px;
 }
 .btn-primary {
     background-color:#36c;
