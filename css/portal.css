@@ -20,7 +20,8 @@ body {
 }
 
 .form-control {
-    width: 50%;
+    width: 38em;
+    max-width:80%;
     margin:auto;
     transition:color 100ms,border-color 100ms,box-shadow 100ms;
     border-radius:2px;
@@ -33,9 +34,10 @@ body {
 }
 
 button {
-    margin:10px 5px;
+    margin:10px 0.5em;
 }
 .btn-primary {
+    width:12em;
     background-color:#36c;
     border:1px solid #36c;
     text-shadow:0 1px rgba(0,0,0,0.1);
